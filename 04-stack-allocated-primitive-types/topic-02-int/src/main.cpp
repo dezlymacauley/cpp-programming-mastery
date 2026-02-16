@@ -12,7 +12,10 @@
 
 #include <print>
 
-// TIP: You can add the `climits` header file to
+// TIP: You can add the `climits` header file to have access to values
+// like `INT_MIN` that can be used to view the smallest number that 
+// an int can store.
+
 #include <climits>
 
 using std::println;
@@ -36,11 +39,11 @@ int main() {
 
     // SECTION: How to print the storage range of the int type
 
-    println("Smallest number that int can store: {}", INT_MIN);
-    // Smallest number that int can store: -2147483648
+    println("Smallest number that an int can store: {}", INT_MIN);
+    // Smallest number that an int can store: -2147483648
 
-    println("Largest number that int can store: {}", INT_MAX);
-    // Largest number that int can store: 2147483647
+    println("Largest number that an int can store: {}", INT_MAX);
+    // Largest number that an int can store: 2147483647
 
     //_________________________________________________________________________
 
