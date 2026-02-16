@@ -13,7 +13,7 @@ Enter the project directory
 cd cpp-programming-mastery
 ```
 
-For the rest of this guide, all commands shoulb be run from this directory.
+For the rest of this guide, all commands should be run from this directory.
 _______________________________________________________________________________
 
 ## Install `clang` (A compiler for C++) using the `conda` backend with `mise`
@@ -126,5 +126,11 @@ For now just leave it empty
 
 ```sh
 touch .gitignore
+```
+
+Add this to the file:
+```gitignore
+# Build outputs
+**/bin/
 ```
 _______________________________________________________________________________
