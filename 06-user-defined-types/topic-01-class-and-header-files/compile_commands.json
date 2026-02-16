@@ -10,7 +10,7 @@
       "-o",
       "bin/main"
     ],
-    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/06-user-defined-types/topic-01-class",
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/06-user-defined-types/topic-01-class-and-header-files",
     "output": "bin/main"
   },
   {
@@ -24,7 +24,7 @@
       "-o",
       "bin/main"
     ],
-    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/06-user-defined-types/topic-01-class",
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/06-user-defined-types/topic-01-class-and-header-files",
     "output": "bin/main"
   }
 ]
