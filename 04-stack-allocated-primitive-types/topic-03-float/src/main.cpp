@@ -29,6 +29,11 @@ int main() {
 
     // SECTION: Declaring and printing the `float` data type
 
+    // Don't forget to add the `f` behind the number
+    // This tells the compiler that this value should be a `float` data type,
+    // and not a `double` data type (I will have a separate guide on this
+    // data type)
+
     float interest_rate{12.62f};
     println("interest_rate: {}", interest_rate);
     // interest_rate: 12.62
