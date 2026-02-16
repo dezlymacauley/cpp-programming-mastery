@@ -81,7 +81,7 @@ Add this to the `Makefile`
 
 run:
 	mkdir -p bin/
-	clang++ -std=c++23 -Iinclude -Wconversion src/*.cpp -o bin/main
+	bear -- clang++ -std=c++23 -Iinclude -Wconversion src/*.cpp -o bin/main
 	./bin/main
 
 clean:
@@ -95,6 +95,11 @@ Make sure that you are in the root of the project and then run this command:
 ```sh
 make
 ```
+
+This will generate a `compile_commands.json` file,
+a `bin/main` file, and if you open a C++ file in your project,
+you'll also have a `.cache` directory in your project.
+
 _______________________________________________________________________________
 
 To run the latest version of your compiled binary:

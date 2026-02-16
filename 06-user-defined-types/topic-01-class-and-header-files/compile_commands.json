@@ -1,0 +1,30 @@
+[
+  {
+    "file": "src/Car.cpp",
+    "arguments": [
+      "clang++",
+      "-std=c++23",
+      "-Iinclude",
+      "-Wconversion",
+      "src/Car.cpp",
+      "-o",
+      "bin/main"
+    ],
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/06-user-defined-types/topic-01-class",
+    "output": "bin/main"
+  },
+  {
+    "file": "src/main.cpp",
+    "arguments": [
+      "clang++",
+      "-std=c++23",
+      "-Iinclude",
+      "-Wconversion",
+      "src/main.cpp",
+      "-o",
+      "bin/main"
+    ],
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/06-user-defined-types/topic-01-class",
+    "output": "bin/main"
+  }
+]

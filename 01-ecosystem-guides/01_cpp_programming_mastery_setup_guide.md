@@ -1,6 +1,45 @@
 # C++ Programming Mastery Setup Guide
 _______________________________________________________________________________
 
+## Install `clangd` and `bear`
+
+On Arch Linux `clangd` is bundled with the `clang` package
+```sh
+sudo pacman -S --needed clang
+```
+
+clangd is a language server for C++ code.
+_______________________________________________________________________________
+
+```sh
+sudo pacman -S --needed bear
+```
+
+bear is a rust-powered command that you add to the Makefile of your
+C++ project. It will create a `compile_commands.json` file that will allow
+clangd provide path completion when refering to header file.
+
+E.g. Example of usage in the Makefile of your project
+```make
+run:
+    mkdir -p bin/
+ 	bear -- clang++ -std=c++23 -Iinclude -Wconversion src/*.cpp -o bin/main
+ 	./bin/main
+```
+
+Without bear, if you had a header file in `include/Car.h` of your project,
+and then you have the file `src/Car.cpp` and you tried to reference the
+header file like this:
+
+```cpp
+#include "Car.h"`
+```
+clangd would display an error message like this in Neovim:
+```
+'Car.h' file not found clang (pp_file_not_found) [1, 10]
+```
+_______________________________________________________________________________
+
 ## Create the project directory
 
 Create the project directory with this command
@@ -122,8 +161,6 @@ _______________________________________________________________________________
 
 ### Add a `gitignore` file
 
-For now just leave it empty
-
 ```sh
 touch .gitignore
 ```
@@ -132,5 +169,8 @@ Add this to the file:
 ```gitignore
 # Build outputs
 **/bin/
+
+# clangd (language server) cache
+**/.cache/
 ```
 _______________________________________________________________________________
