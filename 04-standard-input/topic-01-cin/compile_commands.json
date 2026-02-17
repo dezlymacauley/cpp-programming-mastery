@@ -1,0 +1,16 @@
+[
+  {
+    "file": "src/main.cpp",
+    "arguments": [
+      "clang++",
+      "-std=c++23",
+      "-Iinclude",
+      "-Wconversion",
+      "src/main.cpp",
+      "-o",
+      "bin/main"
+    ],
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/04-standard-input/topic-01-cin",
+    "output": "bin/main"
+  }
+]

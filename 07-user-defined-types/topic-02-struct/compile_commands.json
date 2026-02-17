@@ -1,0 +1,30 @@
+[
+  {
+    "file": "src/main.cpp",
+    "arguments": [
+      "clang++",
+      "-std=c++23",
+      "-Iinclude",
+      "-Wconversion",
+      "src/main.cpp",
+      "-o",
+      "bin/main"
+    ],
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/06-user-defined-types/topic-02-struct",
+    "output": "bin/main"
+  },
+  {
+    "file": "src/Player.cpp",
+    "arguments": [
+      "clang++",
+      "-std=c++23",
+      "-Iinclude",
+      "-Wconversion",
+      "src/Player.cpp",
+      "-o",
+      "bin/main"
+    ],
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/06-user-defined-types/topic-02-struct",
+    "output": "bin/main"
+  }
+]
