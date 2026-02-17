@@ -16,9 +16,17 @@ private:
     int passengers;
 
 public:
+
+    // TIP: When creating a class in C++,
+    // always create a constructor function to ensure that the fields of the
+    // class are initialized when it is created.
+
+    // This is a constructor
+    Car();
+
     void FillFuel(float amount);
     void Accelerate();
     void Brake();
     void AddPassenger(int count);
-    void Dashboard();
+    void ViewDashboard();
 };
