@@ -21,8 +21,26 @@ public:
     // always create a constructor function to ensure that the fields of the
     // class are initialized when it is created.
 
-    // This is a constructor
+    // This is a default constructor function
+    // This will be used assign initialize an instance when it is created
+    // without supplying any arguments.
     Car();
+
+    //_________________________________________________________________________
+
+    // SECTION: This is a destructor function
+    
+    // This is used to ensure that the memory allocated for an instance of
+    // a class is released back to the computer.
+
+    // NOTE: For this example, a destructor function is NOT needed because
+    // all of the fields of the class are stack-allocated data types that
+    // will automatically be cleaned up by C++ when those variables 
+    // go out of scope.
+
+    ~Car();
+
+    //_________________________________________________________________________
 
     void FillFuel(float amount);
     void Accelerate();
