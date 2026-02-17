@@ -23,13 +23,24 @@ using std::println;
 // SECTION: Example 2 - How to create a default constructor
 // with the member initializer list syntax
 
-// This is more efficient than assigning inside the constructor body 
-// because it initializes the members directly rather 
+// This is more efficient than assigning inside the constructor body
+// because it initializes the members directly rather
 // than default-initializing them first and then assigning values to them.
 
 Car::Car() : fuel(0), speed(0), passengers(0) {
     println();
     println("A new car has been created");
+    println();
+}
+
+//_____________________________________________________________________________
+
+// This is constructor function that allows the fuel amount to be set
+// when the class is created.
+
+Car::Car(float fuel_amount) : speed(0), passengers(0) {
+    fuel = fuel_amount;
+    println("A new car with fuel of {}, has been created", fuel);
     println();
 }
 

@@ -7,7 +7,8 @@ int main() {
 
     //_________________________________________________________________________
     
-    // Creating an instance of the class
+    // SECTION: Creating an instance of the class with the default constructor
+    
     Car red_car;
     
     println("red_car after creation");
@@ -37,6 +38,15 @@ int main() {
     println("red_car after hitting the brake");
     red_car.ViewDashboard();
     
+    //_________________________________________________________________________
+  
+    // SECTION: Creating an instance of the class by setting the fuel amount
+
+    Car blue_car = Car(42.20f);
+    
+    println("blue_car created with fuel already set");
+    blue_car.ViewDashboard();
+
     //_________________________________________________________________________
 
     return 0;

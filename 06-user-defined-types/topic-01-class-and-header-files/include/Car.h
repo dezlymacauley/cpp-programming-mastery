@@ -27,6 +27,12 @@ public:
     Car();
 
     //_________________________________________________________________________
+    
+    // This is constructor function that allows the fuel amount to be set
+    // when the class is created.
+    Car(float fuel_amount);
+
+    //_________________________________________________________________________
 
     // SECTION: This is a destructor function
     
