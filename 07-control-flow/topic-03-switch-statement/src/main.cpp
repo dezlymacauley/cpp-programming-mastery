@@ -1,6 +1,8 @@
 /*
     ABOUT: switch statement
 
+    Use this when you want to handle more than 3 outcomes.
+
 */
 
 #include <print>

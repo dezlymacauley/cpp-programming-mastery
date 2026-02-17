@@ -1,6 +1,8 @@
 /*
     ABOUT: if statement
 
+    This is best for handling 1 to 3 potential outcomes
+
 */
 
 #include <print>
