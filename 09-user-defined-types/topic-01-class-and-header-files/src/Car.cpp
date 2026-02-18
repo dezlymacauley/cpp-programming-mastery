@@ -8,8 +8,9 @@ using std::println;
 // SECTION: Example 1 - How to create a default constructor
 
 // This is a constructor function with default values set
-// Note that the brace initialization syntax can't be used
-// in a constructor function
+// Note that the uniform initialization syntax,
+// also refered to as the brace initialization syntax,
+// can't be used in a constructor function
 
 // Car::Car() {
 //     fuel = 0;

@@ -8,7 +8,8 @@
     This data type can only be set to: `false` or `true`
     Also note that when it comes to bool, 0 = false, and 1 = true
 
-    // TIP: Use `Braced initialization` when declaring variables in C++
+    // TIP: Use `Uniform initialization`,
+    // aks `Braced initialization` when declaring variables in C++
 
     E.g. If you declare a variable like this (without braced initialization)
     bool is_villain = 18;
