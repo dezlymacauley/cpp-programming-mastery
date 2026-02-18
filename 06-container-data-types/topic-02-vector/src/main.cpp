@@ -23,7 +23,7 @@ int main() {
 
     // SECTION: Declaring a vector object on the stack
 
-    vector<int> player_scores{};
+    vector<int> player_scores{20, 75, 48};
 
     //_________________________________________________________________________
 
