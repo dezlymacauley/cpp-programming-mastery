@@ -16,16 +16,16 @@ using std::println;
 // STEP: 1 => Define the task that needs to be completed
 
 // Here's a very simple task:
-// 🚚 A delivery truck that has a certain number of packages,
+// 🚚 A delivery van that has a certain number of packages,
 // has arrived at a restaurant.
 
-// I want to offload truck by removing packages from the truck,
+// I want to offload van by removing packages from the van,
 // and increasing the number of packages in the restaurant.
 
 // STEP: 2 => Create the function signature of a recursive function
 // to solve the task.
 
-void offload_truck(int num_pkgs_in_truck, int num_pkgs_in_resturant) {
+void offload_van(int num_pkgs_in_van, int num_pkgs_in_resturant) {
 
     // STEP: 3 => Define the base case
 
@@ -38,10 +38,10 @@ void offload_truck(int num_pkgs_in_truck, int num_pkgs_in_resturant) {
     // I.e. This is a check that that let's the function know that the
     // task has already been solved.
 
-    if (num_pkgs_in_truck == 0) {
+    if (num_pkgs_in_van == 0) {
 
         // Notify me when the task is completed.
-        println("There are no more packages in the truck to offload");
+        println("There are no more packages in the van to offload");
         println("Restaurant now has {} packages", num_pkgs_in_resturant);
 
         // Don't forget the return statement.
@@ -56,8 +56,8 @@ void offload_truck(int num_pkgs_in_truck, int num_pkgs_in_resturant) {
     // has not yet been completed. 
     // I.e. The base case has not yet been reached.
 
-    // Decrease the number of packages in the truck by 1;
-    num_pkgs_in_truck--;
+    // Decrease the number of packages in the van by 1;
+    num_pkgs_in_van--;
 
     // Increase the number of packages in the restaurant by 1;
     num_pkgs_in_resturant++;
@@ -65,13 +65,13 @@ void offload_truck(int num_pkgs_in_truck, int num_pkgs_in_resturant) {
     // This last line of a recursive function,
     // is where the function calls itself again but this time 
     // with the updated arguments.
-    offload_truck(num_pkgs_in_truck, num_pkgs_in_resturant);
+    offload_van(num_pkgs_in_van, num_pkgs_in_resturant);
 }
 
 int main() {
 
-    int packages_in_truck{5};
+    int packages_in_van{5};
     int packages_in_resturant{2};
 
-    offload_truck(packages_in_truck, packages_in_resturant);
+    offload_van(packages_in_van, packages_in_resturant);
 }

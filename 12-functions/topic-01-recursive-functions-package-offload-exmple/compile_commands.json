@@ -11,7 +11,7 @@
       "-o",
       "bin/main"
     ],
-    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/12-functions/topic-01-recursive-functions",
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/12-functions/topic-01-recursive-functions-package-offload-exmple",
     "output": "bin/main"
   }
 ]
