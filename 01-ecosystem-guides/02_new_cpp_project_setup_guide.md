@@ -46,12 +46,22 @@ _______________________________________________________________________________
 Add this to the `.clang-format` file
 
 ```yaml
+# Tell clang-format that the sytnax in the file is C++
 Language: Cpp
+
+# 4 space indentation
 IndentWidth: 4
-AccessModifierOffset: -4
+
+# Lines longer than 80 characters will be wrapped
 ColumnLimit: 80
+
+AccessModifierOffset: -4
 PointerAlignment: Left
 AllowShortFunctionsOnASingleLine: false
+
+# When parameters don't fit on one line, break them all onto the next line
+# and place the closing parenthesis on its own line
+AlignAfterOpenBracket: BlockIndent
 ```
 _______________________________________________________________________________
 
