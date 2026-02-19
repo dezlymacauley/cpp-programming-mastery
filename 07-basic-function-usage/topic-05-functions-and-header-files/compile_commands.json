@@ -1,0 +1,32 @@
+[
+  {
+    "file": "src/CustomFunctions.cpp",
+    "arguments": [
+      "clang++",
+      "-std=c++23",
+      "-Iinclude",
+      "-Wconversion",
+      "-Wunused-variable",
+      "src/CustomFunctions.cpp",
+      "-o",
+      "bin/main"
+    ],
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/07-basic-function-usage/topic-05-functions-and-header-files",
+    "output": "bin/main"
+  },
+  {
+    "file": "src/main.cpp",
+    "arguments": [
+      "clang++",
+      "-std=c++23",
+      "-Iinclude",
+      "-Wconversion",
+      "-Wunused-variable",
+      "src/main.cpp",
+      "-o",
+      "bin/main"
+    ],
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/07-basic-function-usage/topic-05-functions-and-header-files",
+    "output": "bin/main"
+  }
+]
