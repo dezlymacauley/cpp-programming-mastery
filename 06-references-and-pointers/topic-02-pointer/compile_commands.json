@@ -1,0 +1,17 @@
+[
+  {
+    "file": "src/main.cpp",
+    "arguments": [
+      "clang++",
+      "-std=c++23",
+      "-Iinclude",
+      "-Wconversion",
+      "-Wunused-variable",
+      "src/main.cpp",
+      "-o",
+      "bin/main"
+    ],
+    "directory": "/home/dezlymacauley/workspace/github-repos/cpp-programming-mastery/06-references-and-pointers/topic-02-pointer",
+    "output": "bin/main"
+  }
+]
